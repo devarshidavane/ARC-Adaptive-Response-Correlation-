@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+confluent-kafka
+psycopg2-binary
+redis
+
+[dev]
+pytest
+black
+flake8
+isort

@@ -1,0 +1,22 @@
+{
+  "name": "arc-threat-intelligence-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ARC Desktop Threat Intelligence Console - Native Tauri Desktop Wrapper",
+  "scripts": {
+    "build:frontend": "npm --prefix ARC_Complete_Documentation/frontend run build",
+    "start:frontend": "npm --prefix ARC_Complete_Documentation/frontend start",
+    "test:frontend": "npm --prefix ARC_Complete_Documentation/frontend test -- --watchAll=false",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "tauri:info": "tauri info"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

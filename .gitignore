@@ -1,0 +1,27 @@
+# Exclude markdown files (per request)
+*.md
+
+# Exclude dependencies and build artifacts
+node_modules/
+src-tauri/target/
+
+# Common credential and configuration files (to avoid leaking login details)
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+credentials.json
+config.json
+*.pfx
+*.p12
+
+# Exclude zip archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+**/target/
+**/node_modules/

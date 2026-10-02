@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/v1.8.0/tooling/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "npm --prefix ARC_Complete_Documentation/frontend run build",
+    "beforeDevCommand": "",
+    "devPath": "http://localhost:3000",
+    "distDir": "../ARC_Complete_Documentation/frontend/build"
+  },
+  "package": {
+    "productName": "ARC Threat Intelligence",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "Copyright 2026 ARC Cybersecurity. All rights reserved.",
+      "deb": {
+        "depends": [
+          "libwebkit2gtk-4.0-37 | libwebkit2gtk-4.1-0",
+          "libgtk-3-0",
+          "libayatana-appindicator3-1"
+        ]
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "com.arc.threatintel",
+      "longDescription": "Advanced SOC Threat Intelligence and Dynamic Network Topology Visualization Console.",
+      "macOS": {
+        "frameworks": [],
+        "minimumSystemVersion": "",
+        "exceptionDomain": "",
+        "signingIdentity": null,
+        "entitlements": null
+      },
+      "resources": [],
+      "shortDescription": "ARC Threat Intelligence Console",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": "",
+        "webviewInstallMode": {
+          "type": "downloadBootstrapper"
+        }
+      }
+    },
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: asset: https:; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost tauri: http://tauri.localhost http://localhost:8000 http://localhost:3000 ws://localhost:3000; object-src 'none'; frame-src 'none'",
+      "devCsp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "center": true,
+        "fullscreen": false,
+        "height": 900,
+        "maximized": false,
+        "minHeight": 700,
+        "minWidth": 1024,
+        "resizable": true,
+        "title": "ARC Threat Intelligence Console",
+        "width": 1440
+      }
+    ]
+  }
+}
